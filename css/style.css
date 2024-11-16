@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: #c79304; 
+    padding: 20px;
+}
+
+.menu-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#menu {
+    display: none;
+}
+
+.logito {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #333;
+}
+
+.redes-1 a {
+    margin: 0 10px;
+}
+
+.redes-1 img {
+    width: 25px;
+    height: 25px;
+}
+
+.header-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.header-txt {
+    flex: 1;
+    padding: 20px;
+}
+
+.header-txt h1 {
+    font-size: 3.9rem;
+    color: #333;
+}
+
+.header-txt p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 15px;
+}
+
+.header-imag img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.alfajor-contenido {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.alfajores-grupo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.alfajores-diversos {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.alfajores-diversos img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.alfajores-diversos h3 {
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.alfajores-diversos p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.servicios-contenido {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.servicios-grup {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.servicio1 {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.servicio1 img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-top: 15px;
+}
+
+.servicios-contenido p {
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.btn1 {
+    background-color: #f8b400;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn1:hover {
+    background-color: #e09e00;
+}
+
+.general {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.general1,
+.general2,
+.general3 {
+    flex: 1;
+    min-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.general1 h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.general1 p {
+    font-size: 1rem;
+    color: #666;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-contenido p {
+    margin-bottom: 15px;
+}
+
+footer .redes-sociales a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+footer .redes-sociales a:hover {
+    color: #f8b400;
+}
+
+
+@media (max-width: 1200px) {
+    .menu-contenedor {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-txt {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .alfajores-grupo {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .servicios-grup {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .alfajores-grupo {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .general {
+        flex-direction: column;
+    }
+
+    .redes-1 a {
+        margin: 0 5px;
+    }
+
+    footer .redes-sociales a {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .header-txt h1 {
+        font-size: 1.8rem;
+    }
+
+    .header-txt p {
+        font-size: 0.9rem;
+    }
+
+    .alfajores-diversos h3 {
+        font-size: 1.1rem;
+    }
+
+    .alfajores-diversos p {
+        font-size: 0.9rem;
+    }
+
+    .servicios-contenido p {
+        font-size: 0.9rem;
+    }
+
+    .general1 h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn1 {
+        font-size: 0.9rem;
+    }
+}
